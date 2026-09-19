@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealora – Coupons, Promo Codes &amp; Online Deals</title>
+  <meta name="description" content="Find the latest coupons, promo codes and online deals from popular US stores with Dealora.">
+  <link rel="canonical" href="https://www.dealora.com/">
+  <meta property="og:title" content="Dealora – Coupons, Promo Codes &amp; Online Deals">
+  <meta property="og:description" content="Find the latest coupons, promo codes and online deals from popular US stores with Dealora.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dealora.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Dealora">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dealora – Coupons, Promo Codes &amp; Online Deals">
+  <meta name="twitter:description" content="Find the latest coupons, promo codes and online deals from popular US stores with Dealora.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Dealora home">
+        <span class="logo-mark" aria-hidden="true">D</span>
+        Dealora
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="coupons.html">Coupons</a>
+        <a href="stores.html">Stores</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <form class="header-search" data-site-search role="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        </span>
+        <label class="visually-hidden" for="header-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Search stores or coupons</label>
+        <input id="header-search" type="search" name="q" placeholder="Search stores..." autocomplete="off">
+        <div class="suggestions" data-suggestions role="listbox" aria-label="Search suggestions"></div>
+      </form>
+      <div class="header-actions">
+        <button class="btn btn--primary btn--sm btn--submit" type="button" data-open-submit>Submit a Coupon</button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="coupons.html">Coupons</a>
+      <a href="stores.html">Stores</a>
+      <a href="index.html#about">About</a>
+      <button class="btn btn--primary" type="button" data-open-submit>Submit a Coupon</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="section-kicker">Smart Deals. Better Savings.</p>
+          <h1>Save More with the Best Deals &amp; Coupons</h1>
+          <p class="lede">Discover verified coupons, promo codes, and online deals from popular US stores.</p>
+          <form class="hero-search" data-site-search role="search">
+            <label class="visually-hidden" for="hero-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Search stores, brands or products</label>
+            <input id="hero-search" type="search" name="q" placeholder="Search stores, brands or products..." autocomplete="off">
+            <button class="btn btn--primary" type="submit">Search</button>
+            <div class="suggestions" data-suggestions role="listbox" aria-label="Search suggestions"></div>
+          </form>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-blob"></div>
+          <div class="art-card art-card--tag">
+            <strong>20%</strong>
+            <div>Savings tag</div>
+          </div>
+          <div class="art-card art-card--main">
+            <h2 style="font-size:1.15rem;margin-top:0.6rem">Featured deal</h2>
+            <p class="muted" style="margin:0">A CSS coupon card showing how a promo might look — not an active code.</p>
+          </div>
+          <div class="art-card art-card--save">
+            <strong>USD pricing</strong>
+            <div>US stores &amp; codes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Browse</p>
+          <h2 id="categories-heading">Popular Categories</h2>
+          <p>Jump into a category to see coupons for US shopping, dining, travel, and more.</p>
+        </div>
+        <div class="card-grid card-grid--cats" data-category-grid></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Spotlight</p>
+          <h2 id="featured-heading">Featured Deals</h2>
+        </div>
+        <div class="card-grid card-grid--coupons" data-featured-grid></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="stores-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Retailers</p>
+          <h2 id="stores-heading">Trending Stores</h2>
+        </div>
+        <div class="card-grid card-grid--stores" data-trending-grid></div>
+        <p style="margin-top:1.5rem"><a class="btn btn--outline" href="stores.html">View all stores</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">About Dealora</p>
+          <h2 id="why-heading">Why Dealora</h2>
+          <p>Dealora is a US-focused coupons and deals directory designed to help shoppers browse promo codes clearly — without inflated claims.</p>
+        </div>
+        <div class="card-grid card-grid--features">
+          <article class="card">
+            <h3>Curated Deals</h3>
+            <p class="muted">Listings are organized by store, category, and coupon type so you can scan offers quickly.</p>
+          </article>
+          <article class="card">
+            <h3>Easy to Find</h3>
+            <p class="muted">Search stores, brands, or products, then filter by type such as promo code or free shipping.</p>
+          </article>
+          <article class="card">
+            <h3>Updated Offers</h3>
+          </article>
+          <article class="card">
+            <h3>Free to Use</h3>
+            <p class="muted">Browse Dealora at no cost. Merchant sites set the actual checkout price in US dollars.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="how-heading">How It Works</h2>
+          <p>Four simple steps from search to checkout on the merchant website.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h3>Search for a store</h3>
+              <p class="muted">Enter a retailer, brand, or product in the search bar.</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h3>Find a deal</h3>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h3>Click to redeem</h3>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">4</div>
+            <div>
+              <h3>Save money</h3>
+              <p class="muted">Confirm the offer on the merchant site before you complete a purchase.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="newsletter">
+          <h2 id="news-heading">Get the Best Deals in Your Inbox</h2>
+          <form data-newsletter novalidate>
+            <div class="newsletter-form">
+              <label class="visually-hidden" for="newsletter-email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Email address</label>
+              <input id="newsletter-email" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+              <button class="btn btn--outline" type="submit">Subscribe</button>
+            </div>
+            <p class="form-message" data-newsletter-msg role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">D</span>
+          Dealora
+        </a>
+        <p style="margin-top:1rem">Smart Deals. Better Savings. A US coupons and deals directory for popular stores.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coupons.html">Coupons</a></li>
+          <li><a href="stores.html">Stores</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Popular categories</h3>
+        <ul>
+          <li><a href="coupons.html?category=Fashion">Fashion</a></li>
+          <li><a href="coupons.html?category=Electronics">Electronics</a></li>
+          <li><a href="coupons.html?category=Beauty">Beauty</a></li>
+          <li><a href="coupons.html?category=Food">Food</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Dealora. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑</button>
+
+  <div class="modal" id="coupon-modal" role="dialog" aria-modal="true" aria-labelledby="coupon-modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+      <p class="section-kicker" data-modal-store></p>
+      <h2 id="coupon-modal-title" data-modal-discount></h2>
+      <p data-modal-desc></p>
+      <div class="code-box">
+        <span data-modal-code></span>
+        <button class="btn btn--primary btn--sm" type="button" data-copy-code>Copy Code</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="submit-modal" role="dialog" aria-modal="true" aria-labelledby="submit-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+      <h2 id="submit-title">Submit a Coupon</h2>
+      <form data-submit-form>
+        <label for="sub-store">Store name</label>
+        <input id="sub-store" name="store" required style="width:100%;margin:0.4rem 0 1rem;padding:0.7rem;border:1px solid var(--color-border);border-radius:8px">
+        <label for="sub-code">Promo code or deal details</label>
+        <input id="sub-code" name="code" required style="width:100%;margin:0.4rem 0 1rem;padding:0.7rem;border:1px solid var(--color-border);border-radius:8px">
+        <button class="btn btn--primary" type="submit">Submit</button>
+        <p class="form-message" data-submit-msg role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

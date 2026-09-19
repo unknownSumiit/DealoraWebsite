@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest Coupons &amp; Deals | Dealora</title>
+  <meta name="description" content="Browse coupons, promo codes, and online deals from popular US stores on Dealora.">
+  <link rel="canonical" href="https://www.dealora.com/coupons.html">
+  <meta property="og:title" content="Latest Coupons &amp; Deals | Dealora">
+  <meta property="og:description" content="Browse coupons, promo codes, and online deals from popular US stores on Dealora.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dealora.com/coupons.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Dealora">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Latest Coupons &amp; Deals | Dealora">
+  <meta name="twitter:description" content="Browse coupons, promo codes, and online deals from popular US stores on Dealora.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Dealora home">
+        <span class="logo-mark" aria-hidden="true">D</span>
+        Dealora
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="coupons.html" aria-current="page">Coupons</a>
+        <a href="stores.html">Stores</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <form class="header-search" data-site-search role="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        </span>
+        <label for="header-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Search stores or coupons</label>
+        <input id="header-search" type="search" name="q" placeholder="Search stores..." autocomplete="off">
+        <div class="suggestions" data-suggestions role="listbox" aria-label="Search suggestions"></div>
+      </form>
+      <div class="header-actions">
+        <button class="btn btn--primary btn--sm btn--submit" type="button" data-open-submit>Submit a Coupon</button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="coupons.html" aria-current="page">Coupons</a>
+      <a href="stores.html">Stores</a>
+      <a href="index.html#about">About</a>
+      <button class="btn btn--primary" type="button" data-open-submit>Submit a Coupon</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">Smart Deals. Better Savings.</p>
+        <h1>Latest Coupons &amp; Deals</h1>
+        <p class="lede">Browse deals and promo codes from popular US stores.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <form class="filters" aria-label="Filter coupons" onsubmit="return false">
+          <div>
+            <label for="coupon-search">Search coupons</label>
+            <input id="coupon-search" type="search" placeholder="Search coupons...">
+          </div>
+          <div>
+            <label for="filter-category">Category</label>
+            <select id="filter-category">
+              <option value="">All categories</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Beauty">Beauty</option>
+              <option value="Food">Food</option>
+              <option value="Travel">Travel</option>
+              <option value="Home">Home</option>
+              <option value="Software">Software</option>
+              <option value="Health">Health</option>
+            </select>
+          </div>
+          <div>
+            <label for="filter-store">Store</label>
+            <select id="filter-store"></select>
+          </div>
+          <div>
+            <label for="filter-type">Coupon type</label>
+            <select id="filter-type">
+              <option value="">All types</option>
+              <option value="Promo Code">Promo Code</option>
+              <option value="Deal">Deal</option>
+              <option value="Free Shipping">Free Shipping</option>
+              <option value="Cashback">Cashback</option>
+            </select>
+          </div>
+          <div>
+            <label for="filter-sort">Sort by</label>
+            <select id="filter-sort">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="ending">Expiration text</option>
+              <option value="store">Store name</option>
+            </select>
+          </div>
+        </form>
+
+        <div id="coupons-results" class="card-grid card-grid--coupons" data-coupon-grid></div>
+        <div class="empty-state" data-empty hidden>
+          <p>No deals found. Try another search.</p>
+        </div>
+        <nav class="pagination" data-pagination aria-label="Coupon pages"></nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">D</span>
+          Dealora
+        </a>
+        <p style="margin-top:1rem">Smart Deals. Better Savings. A US coupons and deals directory for popular stores.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coupons.html">Coupons</a></li>
+          <li><a href="stores.html">Stores</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Popular categories</h3>
+        <ul>
+          <li><a href="coupons.html?category=Fashion">Fashion</a></li>
+          <li><a href="coupons.html?category=Electronics">Electronics</a></li>
+          <li><a href="coupons.html?category=Beauty">Beauty</a></li>
+          <li><a href="coupons.html?category=Food">Food</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Dealora. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑</button>
+
+  <div class="modal" id="coupon-modal" role="dialog" aria-modal="true" aria-labelledby="coupon-modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+      <p class="section-kicker" data-modal-store></p>
+      <h2 id="coupon-modal-title" data-modal-discount></h2>
+      <p data-modal-desc></p>
+      <div class="code-box">
+        <span data-modal-code></span>
+        <button class="btn btn--primary btn--sm" type="button" data-copy-code>Copy Code</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="submit-modal" role="dialog" aria-modal="true" aria-labelledby="submit-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+      <h2 id="submit-title">Submit a Coupon</h2>
+      <form data-submit-form>
+        <label for="sub-store">Store name</label>
+        <input id="sub-store" name="store" required style="width:100%;margin:0.4rem 0 1rem;padding:0.7rem;border:1px solid var(--color-border);border-radius:8px">
+        <label for="sub-code">Promo code or deal details</label>
+        <input id="sub-code" name="code" required style="width:100%;margin:0.4rem 0 1rem;padding:0.7rem;border:1px solid var(--color-border);border-radius:8px">
+        <button class="btn btn--primary" type="submit">Submit</button>
+        <p class="form-message" data-submit-msg role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
